@@ -360,6 +360,30 @@
 </ul>
 <h2 id="デモプレイ時のスコア"><a name="デモプレイ時のスコア" class="plugin-anchor" href="#デモプレイ時のスコア"><i class="fa fa-link" aria-hidden="true"></i></a>デモプレイ時のスコア</h2>
 <p>実はこれ、電源を入れてから最後にプレイしたスコアが表示されています(2人同時プレイなら、高かった方の値)。電源を入れ直すと、0点に戻ります。<img src="img/スコア.png" alt></p>
+<h2 id="1000回マラソンを自動化しよう"><a name="1000回マラソンを自動化しよう" class="plugin-anchor" href="#1000回マラソンを自動化しよう"><i class="fa fa-link" aria-hidden="true"></i></a>1000回マラソンを自動化しよう</h2>
+<ul>
+<li><p><a href="../3/ユーザーデータ.html#補足：データと難易度の関係">補足：データと難易度の関係</a>で述べた通り、プレイ回数も難易度に影響してきます。だから、カンストで固定したいのですが、その上限<strong>1000回。</strong>「やってたら到達していた」ならまだしも、狙ってやるのはタイヘン。</p>
+</li>
+<li><p>そこで「多機能連射装置：R-03N」の特殊マクロ機能を使って、ゲーム開始～ネームエントリーを自動化します。あとは放置して死ぬに任せ、ゲームオーバーになったらまた開始・・・とループさせます。</p>
+</li>
+<li><p>手順は以下の通り。あらかじめ「フリープレイ・残1・コンティニュー禁止」に設定しておきます。</p>
+<ol>
+<li>スタートボタンを1フレーム入力し、ゲーム開始<sup><a href="#fn_7" id="reffn_7">7</a></sup></li>
+<li>レバー操作可能になるまで、20フレームほど待機</li>
+<li>1文字目の分だけレバーを入力</li>
+<li>2フレーム待機し、Aボタンを1フレーム入れて決定、ふたたび2フレーム待機</li>
+<li>2～4文字目について、3.と4.を繰り返す</li>
+</ol>
+</li>
+</ul>
+<ul>
+<li><p>サンプルとして、私のネームエントリー「VAN(空白)」を自動化するとこうなります<sup><a href="#fn_8" id="reffn_8">8</a></sup>。「開始フレーム」～「終了フレーム」まで「コマンド」を設定して下さい。別のネームにしたい場合は、赤字の入力フレーム数を変えて対応します<sup><a href="#fn_9" id="reffn_9">9</a></sup>。<br><img src="img/特殊マクロ.png" alt></p>
+</li>
+<li><p>特殊マクロのトリガーは、他に影響を与えにくいCボタンが良いでしょう。R-03N自体の設定で連射してもループに<strong>ならない</strong>ため、トリガーとなるボタンは筐体orコントロールボックス側で連射を入れて下さい。準備が出来たら、<strong>オロナミンC</strong>でも置いて押しっぱなしにすればOKです。</p>
+</li>
+<li><p>R-03Nなどコマンドコントローラーの類を持っていないと全く役に立たないネタですが、手動だと何ヶ月もかかるカンストを<strong>1日</strong>放置するだけでやってくれます。お持ちの方は、ぜひお試しあれ。</p>
+</li>
+</ul>
 <blockquote id="fn_1">
 <sup>1</sup>. プレイ回数はちゃんと加算されます(新規にデータを作成して確認)<a href="#reffn_1" title="Jump back to footnote [1] in the text."> ↩</a>
 </blockquote>
@@ -377,6 +401,15 @@
 </blockquote>
 <blockquote id="fn_6">
 <sup>6</sup>. JAMMA端子とスピーカー端子の両方から音を出すと、過負荷で基板にダメージが生じるとされているためです<a href="#reffn_6" title="Jump back to footnote [6] in the text."> ↩</a>
+</blockquote>
+<blockquote id="fn_7">
+<sup>7</sup>. アトラクトデモ中はスタートとコイン以外のボタンを受け付けないので、このようにしています<a href="#reffn_7" title="Jump back to footnote [7] in the text."> ↩</a>
+</blockquote>
+<blockquote id="fn_8">
+<sup>8</sup>. 設定と動作確認は海外AC版で行いましたが、日本版でもたぶん同様にできます<a href="#reffn_8" title="Jump back to footnote [8] in the text."> ↩</a>
+</blockquote>
+<blockquote id="fn_9">
+<sup>9</sup>. どの文字を何フレームで選べるかは、実際に試すのが早いです。1文字動くのに3フレームぐらいという感じでした<a href="#reffn_9" title="Jump back to footnote [9] in the text."> ↩</a>
 </blockquote>
 
                             </div>
@@ -414,7 +447,7 @@
                     <a href="#">Return to the top</a>
                 </li>
                 <li>
-                    <a href="#">Updated Aug 13th 21</a>
+                    <a href="#">Updated Aug 21st 21</a>
                 </li>
             </ul>
         </div>
@@ -440,12 +473,16 @@
     
 
     
+    <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+    
     <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
     
 
 <script>
 (function() {
-    gitbook.page.hasChanged({"page":{"date updated":"2021-08-12 14:20:53","title":"AC版の小ネタ","level":"1.6.1","depth":2,"next":{"title":"移植版について","level":"1.6.2","depth":2,"path":"5/移植版について.md","ref":"5/移植版について.md","articles":[]},"previous":{"title":"その他あれこれ","level":"1.6","depth":1,"path":"5/その他あれこれ.md","ref":"5/その他あれこれ.md","articles":[{"title":"AC版の小ネタ","level":"1.6.1","depth":2,"path":"5/AC版の小ネタ.md","ref":"5/AC版の小ネタ.md","articles":[]},{"title":"移植版について","level":"1.6.2","depth":2,"path":"5/移植版について.md","ref":"5/移植版について.md","articles":[]},{"title":"海外版について","level":"1.6.3","depth":2,"path":"5/海外版について.md","ref":"5/海外版について.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro-fixed","anchors","expand-active-chapter","collapsible-chapters","theme-official","katex"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-chapters":{},"search-pro-fixed":{},"theme-official":{},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"expand-active-chapter":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"レスリー探検隊 改訂報告書","language":"ja","gitbook":"*","description":"RAYCRISISの攻略同人誌「レスリー探検隊 調査報告書」「レスリー探検隊 追加報告書」、その2冊を統合・改訂した総集編です。"},"file":{"path":"5/AC版の小ネタ.md","mtime":"2021-08-13T05:35:36.578Z","type":"markdown"},"gitbook":{"version":"3.6.20","time":"2021-08-13T08:13:54.289Z"},"basePath":"..","book":{"language":""}});
+    gitbook.page.hasChanged({"page":{"date updated":"2021-08-12 14:20:53","title":"AC版の小ネタ","level":"1.6.1","depth":2,"next":{"title":"移植版について","level":"1.6.2","depth":2,"path":"5/移植版について.md","ref":"5/移植版について.md","articles":[]},"previous":{"title":"その他あれこれ","level":"1.6","depth":1,"path":"5/その他あれこれ.md","ref":"5/その他あれこれ.md","articles":[{"title":"AC版の小ネタ","level":"1.6.1","depth":2,"path":"5/AC版の小ネタ.md","ref":"5/AC版の小ネタ.md","articles":[]},{"title":"移植版について","level":"1.6.2","depth":2,"path":"5/移植版について.md","ref":"5/移植版について.md","articles":[]},{"title":"海外版について","level":"1.6.3","depth":2,"path":"5/海外版について.md","ref":"5/海外版について.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro-fixed","anchors","expand-active-chapter","collapsible-chapters","theme-official","katex","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"livereload":{},"collapsible-chapters":{},"search-pro-fixed":{},"theme-official":{},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"expand-active-chapter":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"レスリー探検隊 改訂報告書","language":"ja","gitbook":"*","description":"RAYCRISISの攻略同人誌「レスリー探検隊 調査報告書」「レスリー探検隊 追加報告書」、その2冊を統合・改訂した総集編です。"},"file":{"path":"5/AC版の小ネタ.md","mtime":"2021-08-20T17:03:42.006Z","type":"markdown"},"gitbook":{"version":"3.6.20","time":"2021-08-20T17:10:45.680Z"},"basePath":"..","book":{"language":""}});
 })();
 </script>
 
