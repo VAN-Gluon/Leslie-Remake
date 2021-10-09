@@ -334,25 +334,36 @@
 </ul>
 <h2 id="マザーボードとromカードの関係"><a name="マザーボードとromカードの関係" class="plugin-anchor" href="#マザーボードとromカードの関係"><i class="fa fa-link" aria-hidden="true"></i></a>マザーボードとROMカードの関係</h2>
 <ul>
-<li><p>TAITO G-netのゲームは初回起動時、マザーボードと「紐付け」されます。これが済んでいるマザーボード同士なら、ユーザーデータが読み出せます<sup><a href="#fn_3" id="reffn_3">3</a></sup>。</p>
+<li><p>TAITO G-Netのゲームは初回起動時、マザーボードと「紐付け」されます。これが済んでいるマザーボード同士なら、ユーザーデータが読み出せます<sup><a href="#fn_3" id="reffn_3">3</a></sup>。</p>
 </li>
 <li><p>一方「紐付け」していないマザーボードで起動すると、ユーザーデータが<strong>消滅</strong>します。複数お持ちの場合、まず全部に「紐付け」しておきましょう<sup><a href="#fn_4" id="reffn_4">4</a></sup>。</p>
 </li>
 </ul>
+<h2 id="ファームウェアについて"><a name="ファームウェアについて" class="plugin-anchor" href="#ファームウェアについて"><i class="fa fa-link" aria-hidden="true"></i></a>ファームウェアについて</h2>
+<ul>
+<li><p>TAITO G-Netは、マザーボードのアップデートが供給された事があります。適用しないと、CF+変換アダプター<sup><a href="#fn_5" id="reffn_5">5</a></sup>タイプのゲームが認識できません。それだけなら、特筆する事もないのですが・・・実はアップデートすると、<strong>ゲームスピードが変わります。</strong><a href="https://youtu.be/XYv4lc4WUOY" target="_blank">実際にご覧下さい。</a></p>
+</li>
+<li><p>一番分かりやすいのは、右端の「INSERT (枚数) COIN〔S〕TO START」。ゲーム開始時のスクロール位置が一定なので、特定のポイントまでに何回+何文字進んだかで比較できます。これを基準にすると、アップデート後の方が早くなっています。</p>
+</li>
+<li><p>しかし動画を見ても、どちらが早いかはその都度異なります。証拠が無いため断言できませんが、私はアップデートに伴ってデータの読み込み方が変わったと推測しています。おそらく、リザルトやチェックポイントの前後で次のデータを読み出しており、それがこの差の原因ではないかと。</p>
+</li>
+<li><p>曲のスピードは変わってませんが、これは<a href="https://wiki.arcadeotaku.com/w/Taito_G-Net" target="_blank">サブCPU(Panasonic MN1020012A)を使用している</a>からだと思われます。しかし画面のスピードが変わるので、音でリズムを取るパターンの場合、展開に違和感が生じるでしょう。</p>
+</li>
+<li><p>なお、アップデートするとマザーボードが初期化されます。すなわち、<strong>全てのユーザーデータが消える</strong>のでご注意ください。アップデート済みかどうかは、CF+変換アダプター<sup><a href="#fn_5" id="reffn_5">5</a></sup>タイプのゲームで判断するしかないようです<sup><a href="#fn_6" id="reffn_6">6</a></sup>。</p>
+</li>
+</ul>
 <h2 id="ステレオ音声の聞き方"><a name="ステレオ音声の聞き方" class="plugin-anchor" href="#ステレオ音声の聞き方"><i class="fa fa-link" aria-hidden="true"></i></a>ステレオ音声の聞き方</h2>
 <ul>
-<li><p>本作はステレオ音源に対応しており、マザーボードのスピーカー端子から取り出せます。JAMMA端子のコネクターとカードを使って、アダプターを作る事も可能<sup><a href="#fn_5" id="reffn_5">5</a></sup>。<img src="img/SP.png" alt></p>
+<li><p>本作はステレオ音源に対応しており、マザーボードのスピーカー端子から取り出せます。JAMMA端子のコネクターとカードを使って、アダプターを作る事も可能<sup><a href="#fn_7" id="reffn_7">7</a></sup>。<img src="img/SP.png" alt></p>
 </li>
 <li><p>参考として、私の作例を。配線は、以下のようになっています。</p>
 <ul>
 <li>1番ピン(赤線)：音声ケーブルの＋(左)</li>
 <li>4番ピン(白線)：音声ケーブルの＋(右)</li>
 <li>JAMMA端子のGND(茶線)：音声ケーブルの－</li>
-<li>JAMMA端子の10番ピン：切断<sup><a href="#fn_6" id="reffn_6">6</a></sup></li>
+<li>JAMMA端子の10番ピン：切断<sup><a href="#fn_8" id="reffn_8">8</a></sup></li>
 </ul>
 </li>
-</ul>
-<ul>
 <li><p>なお、この音声をイヤホン等で直接聞く場合、＋側に300Ωほどの抵抗を入れて下さい。さもないと、過電流で<strong>やけど</strong>や<strong>断線</strong>のおそれがあります。アンプ付きスピーカーにつなぎ、そこから聞く分には問題無い・・・はず。</p>
 </li>
 <li><p>言うまでも無く、これらの内容について保証はできません。実行は<strong>自己責任</strong>でお願いします。あと、マザーボード上のスイッチは「STEREO」に設定しておきましょう。忘れると意味がありません。</p>
@@ -362,26 +373,156 @@
 <p>実はこれ、電源を入れてから最後にプレイしたスコアが表示されています(2人同時プレイなら、高かった方の値)。電源を入れ直すと、0点に戻ります。<img src="img/スコア.png" alt></p>
 <h2 id="1000回マラソンを自動化しよう"><a name="1000回マラソンを自動化しよう" class="plugin-anchor" href="#1000回マラソンを自動化しよう"><i class="fa fa-link" aria-hidden="true"></i></a>1000回マラソンを自動化しよう</h2>
 <ul>
-<li><p><a href="../3/ユーザーデータ.html#補足：データと難易度の関係">補足：データと難易度の関係</a>で述べた通り、プレイ回数も難易度に影響してきます。だから、カンストで固定したいのですが、その上限<strong>1000回。</strong>「やってたら到達していた」ならまだしも、狙ってやるのはタイヘン。</p>
-</li>
-<li><p>そこで「多機能連射装置：R-03N」の特殊マクロ機能を使って、ゲーム開始～ネームエントリーを自動化します。あとは放置して死ぬに任せ、ゲームオーバーになったらまた開始・・・とループさせます。</p>
+<li><p><a href="../3/ユーザーデータ.html#補足：データと難易度の関係">補足：データと難易度の関係</a>で述べた通り、プレイ回数も難易度に影響します。だからカンストで固定したいですが、上限は<strong>1000回。</strong>「やっていたら到達した」ならまだしも、狙ってやるのはタイヘン。そこで「多機能連射装置：R-03N」の特殊マクロを使って、ゲーム開始～ネームエントリーを自動化しちゃいましょう。</p>
 </li>
 <li><p>手順は以下の通り。あらかじめ「フリープレイ・残1・コンティニュー禁止」に設定しておきます。</p>
 <ol>
-<li>スタートボタンを1フレーム入力し、ゲーム開始<sup><a href="#fn_7" id="reffn_7">7</a></sup></li>
+<li>スタートボタンを1フレーム入力し、ゲーム開始<sup><a href="#fn_9" id="reffn_9">9</a></sup></li>
 <li>レバー操作可能になるまで、20フレームほど待機</li>
 <li>1文字目の分だけレバーを入力</li>
 <li>2フレーム待機し、Aボタンを1フレーム入れて決定、ふたたび2フレーム待機</li>
 <li>2～4文字目について、3.と4.を繰り返す</li>
 </ol>
 </li>
-</ul>
-<ul>
-<li><p>サンプルとして、私のネームエントリー「VAN(空白)」を自動化するとこうなります<sup><a href="#fn_8" id="reffn_8">8</a></sup>。「開始フレーム」～「終了フレーム」まで「コマンド」を設定して下さい。別のネームにしたい場合は、赤字の入力フレーム数を変えて対応します<sup><a href="#fn_9" id="reffn_9">9</a></sup>。<br><img src="img/特殊マクロ.png" alt></p>
+<li><p>サンプルとして、私のネームエントリー「VAN(空白)」を自動化するとこうなります<sup><a href="#fn_10" id="reffn_10">10</a></sup>。「開始フレーム」～「終了フレーム」まで「コマンド」を設定して下さい。別のネームにしたい場合は、赤字以降の入力フレーム数を変えて対応します<sup><a href="#fn_11" id="reffn_11">11</a></sup>。</p>
 </li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">No.</th>
+<th style="text-align:center">入力</th>
+<th style="text-align:center">コマンド</th>
+<th style="text-align:center">開始フレーム</th>
+<th style="text-align:center">終了フレーム</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">スタート</td>
+<td style="text-align:center">START</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">ウェイト</td>
+<td style="text-align:center">なし</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">20</td>
+</tr>
+<tr>
+<td style="text-align:center"><span style="color:#ff0000">3</span></td>
+<td style="text-align:center"><span style="color:#ff0000">V</span></td>
+<td style="text-align:center"><span style="color:#ff0000">↓</span></td>
+<td style="text-align:center"><span style="color:#ff0000">21</span></td>
+<td style="text-align:center"><span style="color:#ff0000">198</span></td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">ウェイト</td>
+<td style="text-align:center">なし</td>
+<td style="text-align:center">199</td>
+<td style="text-align:center">200</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">決定</td>
+<td style="text-align:center">A</td>
+<td style="text-align:center">201</td>
+<td style="text-align:center">201</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">ウェイト</td>
+<td style="text-align:center">なし</td>
+<td style="text-align:center">202</td>
+<td style="text-align:center">203</td>
+</tr>
+<tr>
+<td style="text-align:center"><span style="color:#ff0000">7</span></td>
+<td style="text-align:center"><span style="color:#ff0000">A</span></td>
+<td style="text-align:center"><span style="color:#ff0000">↑</span></td>
+<td style="text-align:center"><span style="color:#ff0000">204</span></td>
+<td style="text-align:center"><span style="color:#ff0000">285</span></td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">ウェイト</td>
+<td style="text-align:center">なし</td>
+<td style="text-align:center">286</td>
+<td style="text-align:center">287</td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:center">決定</td>
+<td style="text-align:center">A</td>
+<td style="text-align:center">288</td>
+<td style="text-align:center">288</td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td style="text-align:center">ウェイト</td>
+<td style="text-align:center">なし</td>
+<td style="text-align:center">289</td>
+<td style="text-align:center">290</td>
+</tr>
+<tr>
+<td style="text-align:center"><span style="color:#ff0000">11</span></td>
+<td style="text-align:center"><span style="color:#ff0000">N</span></td>
+<td style="text-align:center"><span style="color:#ff0000">↓</span></td>
+<td style="text-align:center"><span style="color:#ff0000">291</span></td>
+<td style="text-align:center"><span style="color:#ff0000">349</span></td>
+</tr>
+<tr>
+<td style="text-align:center">12</td>
+<td style="text-align:center">ウェイト</td>
+<td style="text-align:center">なし</td>
+<td style="text-align:center">350</td>
+<td style="text-align:center">351</td>
+</tr>
+<tr>
+<td style="text-align:center">13</td>
+<td style="text-align:center">決定</td>
+<td style="text-align:center">A</td>
+<td style="text-align:center">352</td>
+<td style="text-align:center">352</td>
+</tr>
+<tr>
+<td style="text-align:center">14</td>
+<td style="text-align:center">ウェイト</td>
+<td style="text-align:center">なし</td>
+<td style="text-align:center">353</td>
+<td style="text-align:center">354</td>
+</tr>
+<tr>
+<td style="text-align:center"><span style="color:#ff0000">15</span></td>
+<td style="text-align:center"><span style="color:#ff0000">空白</span></td>
+<td style="text-align:center"><span style="color:#ff0000">↑</span></td>
+<td style="text-align:center"><span style="color:#ff0000">355</span></td>
+<td style="text-align:center"><span style="color:#ff0000">415</span></td>
+</tr>
+<tr>
+<td style="text-align:center">16</td>
+<td style="text-align:center">ウェイト</td>
+<td style="text-align:center">なし</td>
+<td style="text-align:center">416</td>
+<td style="text-align:center">417</td>
+</tr>
+<tr>
+<td style="text-align:center">17</td>
+<td style="text-align:center">決定</td>
+<td style="text-align:center">A</td>
+<td style="text-align:center">418</td>
+<td style="text-align:center">500</td>
+</tr>
+</tbody>
+</table>
+<ul>
 <li><p>特殊マクロのトリガーは、他に影響を与えにくいCボタンが良いでしょう。R-03N自体の設定で連射してもループに<strong>ならない</strong>ため、トリガーとなるボタンは筐体orコントロールボックス側で連射を入れて下さい。準備が出来たら、<strong>オロナミンC</strong>でも置いて押しっぱなしにすればOKです。</p>
 </li>
-<li><p>R-03Nなどコマンドコントローラーの類を持っていないと全く役に立たないネタですが、手動だと何ヶ月もかかるカンストを<strong>1日</strong>放置するだけでやってくれます。お持ちの方は、ぜひお試しあれ。</p>
+<li><p>R-03Nなどコマンドコントローラーの類を持っていないと全く役に立たないネタですが、手動だと何ヶ月もかかるカンストを<strong>1日</strong>でやってくれます。お試しあれ。</p>
 </li>
 </ul>
 <blockquote id="fn_1">
@@ -397,19 +538,25 @@
 <sup>4</sup>. などと言いつつ、上限は検証できていません。いちおう、2枚は大丈夫だった覚えがあります<a href="#reffn_4" title="Jump back to footnote [4] in the text."> ↩</a>
 </blockquote>
 <blockquote id="fn_5">
-<sup>5</sup>. 対応しているピンは、日本モレックス製の「2.5mmピッチ 5051 4ピン」(5051-04)です<a href="#reffn_5" title="Jump back to footnote [5] in the text."> ↩</a>
+<sup>5</sup>. 具体的には「ころん」「お手並み拝見 FINAL」など。カード中央から段差があるので、一目で分かります<a href="#reffn_5" title="Jump back to footnote [5] in the text."> ↩</a>
 </blockquote>
 <blockquote id="fn_6">
-<sup>6</sup>. JAMMA端子とスピーカー端子の両方から音を出すと、過負荷で基板にダメージが生じるとされているためです<a href="#reffn_6" title="Jump back to footnote [6] in the text."> ↩</a>
+<sup>6</sup>. 手持ちのマザー2枚が「アップデート済みのステッカーもROMも載ってないけど、CFタイプのゲームが起動する」というケースでした<a href="#reffn_6" title="Jump back to footnote [6] in the text."> ↩</a>
 </blockquote>
 <blockquote id="fn_7">
-<sup>7</sup>. アトラクトデモ中はスタートとコイン以外のボタンを受け付けないので、このようにしています<a href="#reffn_7" title="Jump back to footnote [7] in the text."> ↩</a>
+<sup>7</sup>. 対応しているピンは、日本モレックス製の「2.5mmピッチ 5051 4ピン」(5051-04)です<a href="#reffn_7" title="Jump back to footnote [7] in the text."> ↩</a>
 </blockquote>
 <blockquote id="fn_8">
-<sup>8</sup>. 設定と動作確認は海外AC版で行いましたが、日本版でもたぶん同様にできます<a href="#reffn_8" title="Jump back to footnote [8] in the text."> ↩</a>
+<sup>8</sup>. JAMMA端子とスピーカー端子の両方から音を出すと、過負荷で基板にダメージが生じるとされているためです<a href="#reffn_8" title="Jump back to footnote [8] in the text."> ↩</a>
 </blockquote>
 <blockquote id="fn_9">
-<sup>9</sup>. どの文字を何フレームで選べるかは、実際に試すのが早いです。1文字動くのに3フレームぐらいという感じでした<a href="#reffn_9" title="Jump back to footnote [9] in the text."> ↩</a>
+<sup>9</sup>. アトラクトデモ中はスタートとコイン以外のボタンを受け付けないので、このようにしています<a href="#reffn_9" title="Jump back to footnote [9] in the text."> ↩</a>
+</blockquote>
+<blockquote id="fn_10">
+<sup>10</sup>. 設定と動作確認は海外AC版で行いましたが、日本版でもたぶん同様にできます<a href="#reffn_10" title="Jump back to footnote [10] in the text."> ↩</a>
+</blockquote>
+<blockquote id="fn_11">
+<sup>11</sup>. どの文字を何フレームで選べるかは、実際に試すのが早いです。1文字動くのに3フレームぐらいという感じでした<a href="#reffn_11" title="Jump back to footnote [11] in the text."> ↩</a>
 </blockquote>
 
                             </div>
@@ -447,7 +594,7 @@
                     <a href="#">Return to the top</a>
                 </li>
                 <li>
-                    <a href="#">Updated Aug 21st 21</a>
+                    <a href="#">Updated Oct 10th 21</a>
                 </li>
             </ul>
         </div>
@@ -473,16 +620,12 @@
     
 
     
-    <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
-    
-
-    
     <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
     
 
 <script>
 (function() {
-    gitbook.page.hasChanged({"page":{"date updated":"2021-08-12 14:20:53","title":"AC版の小ネタ","level":"1.6.1","depth":2,"next":{"title":"移植版について","level":"1.6.2","depth":2,"path":"5/移植版について.md","ref":"5/移植版について.md","articles":[]},"previous":{"title":"その他あれこれ","level":"1.6","depth":1,"path":"5/その他あれこれ.md","ref":"5/その他あれこれ.md","articles":[{"title":"AC版の小ネタ","level":"1.6.1","depth":2,"path":"5/AC版の小ネタ.md","ref":"5/AC版の小ネタ.md","articles":[]},{"title":"移植版について","level":"1.6.2","depth":2,"path":"5/移植版について.md","ref":"5/移植版について.md","articles":[]},{"title":"海外版について","level":"1.6.3","depth":2,"path":"5/海外版について.md","ref":"5/海外版について.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro-fixed","anchors","expand-active-chapter","collapsible-chapters","theme-official","katex","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"livereload":{},"collapsible-chapters":{},"search-pro-fixed":{},"theme-official":{},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"expand-active-chapter":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"レスリー探検隊 改訂報告書","language":"ja","gitbook":"*","description":"RAYCRISISの攻略同人誌「レスリー探検隊 調査報告書」「レスリー探検隊 追加報告書」、その2冊を統合・改訂した総集編です。"},"file":{"path":"5/AC版の小ネタ.md","mtime":"2021-08-20T17:03:42.006Z","type":"markdown"},"gitbook":{"version":"3.6.20","time":"2021-08-20T17:10:45.680Z"},"basePath":"..","book":{"language":""}});
+    gitbook.page.hasChanged({"page":{"date updated":"2021-10-10 00:23:46","title":"AC版の小ネタ","level":"1.6.1","depth":2,"next":{"title":"移植版について","level":"1.6.2","depth":2,"path":"5/移植版について.md","ref":"5/移植版について.md","articles":[]},"previous":{"title":"その他あれこれ","level":"1.6","depth":1,"path":"5/その他あれこれ.md","ref":"5/その他あれこれ.md","articles":[{"title":"AC版の小ネタ","level":"1.6.1","depth":2,"path":"5/AC版の小ネタ.md","ref":"5/AC版の小ネタ.md","articles":[]},{"title":"移植版について","level":"1.6.2","depth":2,"path":"5/移植版について.md","ref":"5/移植版について.md","articles":[]},{"title":"海外版について","level":"1.6.3","depth":2,"path":"5/海外版について.md","ref":"5/海外版について.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro-fixed","anchors","expand-active-chapter","collapsible-chapters","theme-official","katex"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-chapters":{},"search-pro-fixed":{},"theme-official":{},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"expand-active-chapter":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"レスリー探検隊 改訂報告書","language":"ja","gitbook":"*","description":"RAYCRISISの攻略同人誌「レスリー探検隊 調査報告書」「レスリー探検隊 追加報告書」、その2冊を統合・改訂した総集編です。"},"file":{"path":"5/AC版の小ネタ.md","mtime":"2021-10-09T18:20:57.301Z","type":"markdown"},"gitbook":{"version":"3.6.20","time":"2021-10-09T18:28:38.442Z"},"basePath":"..","book":{"language":""}});
 })();
 </script>
 
