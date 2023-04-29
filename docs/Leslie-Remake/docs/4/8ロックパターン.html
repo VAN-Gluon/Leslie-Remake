@@ -1,0 +1,580 @@
+
+<!DOCTYPE HTML>
+<html lang="ja" >
+    <head>
+        <meta charset="UTF-8">
+        <title>8ロックパターン · レスリー探検隊 改訂報告書</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.20">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro-fixed/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expand-active-chapter/expand-active-chapter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-collapsible-chapters/collapsible-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+
+    
+    <link rel="next" href="マップ一覧.html" />
+    
+    
+    <link rel="prev" href="ランク調整パターン.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="gb-page-wrapper">
+    <header class="gb-page-header">
+        <div class="container">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="検索ワードを入力" />
+</div>
+
+
+            <a href=".." class="logo">
+                <img src="../gitbook/images/logo/128.png">
+                <h1>レスリー探検隊 改訂報告書</h1>
+            </a>
+
+            
+
+            
+                
+                <a href="マップ一覧.html" class="btn btn-link pull-right hidden-xs">
+                    <i class="octicon octicon-chevron-right"></i>
+                </a>
+                
+                
+                <a href="ランク調整パターン.html" class="btn btn-link pull-right hidden-xs">
+                    <i class="octicon octicon-chevron-left"></i>
+                </a>
+                
+            
+        
+        </div>
+    </header>
+
+    <div class="gb-page-body">
+        <div class="gb-page-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        
+
+
+
+    
+    <div class="panel panel-default">
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../" class="list-group-item ">
+        
+
+            
+
+            
+
+            Introduction
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../はじめに.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            はじめに
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../参考資料.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            参考資料
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../3/基本要素.html" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            基本要素
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="各面攻略.html" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-down"></i>
+            
+
+            各面攻略
+
+        
+        </a>
+        
+
+        
+        
+    
+        
+        <a href="ランク調整パターン.html" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            ランク調整パターン
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="8ロックパターン.html" class="list-group-item active">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            8ロックパターン
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="マップ一覧.html" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            マップ一覧
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="自我領域.html" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            自我領域
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="知能領域.html" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            知能領域
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="記憶領域.html" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            記憶領域
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="感情領域.html" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            感情領域
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="意識領域.html" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            意識領域
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="思考領域.html" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            思考領域
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="dis-Human.html" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            dis-Human
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="infinity.html" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            infinity
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="まとめ.html" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            まとめ
+
+        
+        </a>
+        
+
+        
+    
+
+        
+    
+        
+        <a href="../5/その他あれこれ.html" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            その他あれこれ
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../あとがきにかえて.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            あとがきにかえて
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+
+
+
+                    </div>
+                    <div class="col-md-9">
+                        
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                            
+                            <div class="gb-markdown book-page-inner">
+                                <h1 id="8ロックパターン"><a name="8ロックパターン" class="plugin-anchor" href="#8ロックパターン"><i class="fa fa-link" aria-hidden="true"></i></a>8ロックパターン</h1>
+<h2 id="どういうものか"><a name="どういうものか" class="plugin-anchor" href="#どういうものか"><i class="fa fa-link" aria-hidden="true"></i></a>どういうものか</h2>
+<p>本作の2号機、WR-02Rは最大で16ロックまでパワーアップできます。当然、ハイパーレーザーのロック数も同様です。</p>
+<p>しかしやってみると、16ロックでハイパーレーザーするのはかなり困難です。原因はいくつかあります。</p>
+<ul>
+<li>16回もロックする前にどこかでミスる</li>
+<li>ロックし終わる前に敵が逃げる</li>
+<li>そもそも16ロックも耐える敵が少ない</li>
+</ul>
+<p>ゲーム自体が速攻推しなので、ハイパーレーザーをミスりやすい＝クリアも不安定です。この辺が「WR-02Rは扱いにくい」と言われるゆえんの1つでしょう。</p>
+<p>であれば、考えを変えてみましょう。ロック数を増やすと不安定なら、<strong>増やさなければ良いのでは?</strong><br>という訳で、このパターンが生まれました。つまり<mark>ロック数をデフォルトの8のまま進む</mark>やり方です。</p>
+<h2 id="何が良いの"><a name="何が良いの" class="plugin-anchor" href="#何が良いの"><i class="fa fa-link" aria-hidden="true"></i></a>何が良いの?</h2>
+<p>簡単に言うと、ハイパーレーザーを使える頻度と安定性が<strong>激増</strong>します。</p>
+<p>以下の画像は、道中に出現する耐久力とロック数の関係です。緑の部分が、ハイパーレーザー1回で倒しきれる範囲になっています。<img src="img/8ロックパターン.png" alt></p>
+<p>これを見ると分かりますが、8ロックでハイパーレーザーしきれない敵はそういません。1つの面で、多くて数機です。<br>爆風に他の敵を巻き込める点も考慮すると、むしろ小回りが利くので有利とすら言えるかも。</p>
+<p>何より、ハイパーレーザーを使える場面や回数が増えて非常に<strong>爽快</strong>です。爆発音を連発するのは、かなり気持ちが良いもの。<br>WR-01Rより着弾が速いため、瞬間火力は随一です。ボスを<strong>10秒未満</strong>で瞬殺する感覚は、慣れるとやみつきになります。</p>
+<h2 id="具体的なやり方"><a name="具体的なやり方" class="plugin-anchor" href="#具体的なやり方"><i class="fa fa-link" aria-hidden="true"></i></a>具体的なやり方</h2>
+<p>方法は簡単で、ショットパワーアイテム(赤)<strong>以外</strong>はいっさい取らない<sup><a href="#fn_1" id="reffn_1">1</a></sup>だけです。<br>なので、アイテムを落とす敵を把握しましょう。<strong>落とすアイテムは固定</strong>なので、パターン化は難しくありません。</p>
+<p>また、ロックを吸われる敵やパーツにも対処しましょう。事故は仕方ないとして、いつも起こるなら策を講じます。</p>
+<ul>
+<li><a href="知能領域.html#ボス「Pro-tor%20Daylight」">Pro-tor</a>のビットは、ラウンドディバイダーやハイパーレーザー中のロックできない「硬直時間」でやり過ごせます。</li>
+<li>吸われた分は諦めてレーザーを逃がし、改めてロックを仕切り直すのも手です。急がば回れ。</li>
+</ul>
+<p>テクニックは要求されますが、使いこなせば抜群の爽快感で答えてくれます。シリーズ中、もっとも仕様変更の恩恵を受けた機体ではないでしょうか。</p>
+<blockquote id="fn_1">
+<sup>1</sup>. 実際には1, 2個取ってもさほど問題無いですが、この方が覚えやすいと思います<a href="#reffn_1" title="Jump back to footnote [1] in the text."> ↩</a>
+</blockquote>
+
+                            </div>
+                            
+                        
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="gb-page-footer">
+        <div class="container">
+            <ul class="menu">
+                <li class="pull-right">
+                    <span class="service-info">Copyright GitBook 2022</span>
+                </li>
+                <li>
+                    <a href="#">Return to the top</a>
+                </li>
+                <li>
+                    <a href="#">Updated Aug 13th 21</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</div>
+
+<script src="../gitbook/gitbook.js"></script>
+
+    
+    <script src="../gitbook/gitbook-plugin-search-pro-fixed/jquery.mark.min.js"></script>
+    
+
+    
+    <script src="../gitbook/gitbook-plugin-search-pro-fixed/search.js"></script>
+    
+
+    
+    <script src="../gitbook/gitbook-plugin-expand-active-chapter/expand-active-chapter.js"></script>
+    
+
+    
+    <script src="../gitbook/gitbook-plugin-collapsible-chapters/collapsible-chapters.js"></script>
+    
+
+    
+    <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+    
+
+<script>
+(function() {
+    gitbook.page.hasChanged({"page":{"date updated":"2021-08-13 01:55:23","title":"8ロックパターン","level":"1.5.2","depth":2,"next":{"title":"マップ一覧","level":"1.5.3","depth":2,"path":"4/マップ一覧.md","ref":"4/マップ一覧.md","articles":[]},"previous":{"title":"ランク調整パターン","level":"1.5.1","depth":2,"path":"4/ランク調整パターン.md","ref":"4/ランク調整パターン.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro-fixed","anchors","expand-active-chapter","collapsible-chapters","theme-official","katex"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-chapters":{},"search-pro-fixed":{},"theme-official":{},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"expand-active-chapter":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"レスリー探検隊 改訂報告書","language":"ja","gitbook":"*","description":"RAYCRISISの攻略同人誌「レスリー探検隊 調査報告書」「レスリー探検隊 追加報告書」、その2冊を統合・改訂した総集編です。"},"file":{"path":"4/8ロックパターン.md","mtime":"2021-08-13T04:57:56.316Z","type":"markdown"},"gitbook":{"version":"3.6.20","time":"2022-09-19T12:20:17.381Z"},"basePath":"..","book":{"language":""}});
+})();
+</script>
+
+        
+    </body>
+</html>
+

@@ -308,6 +308,8 @@
             
 
             
+            <i class="octicon octicon-chevron-right"></i>
+            
 
             あとがきにかえて
 
@@ -335,8 +337,7 @@
                                 <h1 id="ユーザーデータ"><a name="ユーザーデータ" class="plugin-anchor" href="#ユーザーデータ"><i class="fa fa-link" aria-hidden="true"></i></a>ユーザーデータ</h1>
 <p>このゲームではROMカードにプレイ状況を記録し、それによって隠し要素の解放やハイスコアの保存など、様々な恩恵が受けられます<sup><a href="#fn_1" id="reffn_1">1</a></sup>。手順は以下の通りです。</p>
 <ol>
-<li>ゲームスタート時、ユーザーネーム3文字＋パスワード1文字を入力します。<ul>
-<li>使用可能な文字は、以下の48種類です。ただし、ネーム部分が全て空白だと登録されません。よって、組み合わせの総数は<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>4</mn><msup><mn>8</mn><mrow><mn>4</mn></mrow></msup><mo>−</mo><mn>4</mn><mn>8</mn><mo>=</mo><mn>5</mn><mo separator="true">,</mo><mn>3</mn><mn>0</mn><mn>8</mn><mo separator="true">,</mo><mn>3</mn><mn>6</mn><mn>8</mn></mrow><annotation encoding="application/x-tex">48^{4}-48=5,308,368</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8141079999999999em;"></span><span class="strut bottom" style="height:1.008548em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">4</span><span class="mord"><span class="mord mathrm">8</span><span class="msupsub"><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord scriptstyle uncramped mtight"><span class="mord mathrm mtight">4</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mbin">−</span><span class="mord mathrm">4</span><span class="mord mathrm">8</span><span class="mrel">=</span><span class="mord mathrm">5</span><span class="mpunct">,</span><span class="mord mathrm">3</span><span class="mord mathrm">0</span><span class="mord mathrm">8</span><span class="mpunct">,</span><span class="mord mathrm">3</span><span class="mord mathrm">6</span><span class="mord mathrm">8</span></span></span></span>通りです。<ul>
+<li>ユーザーネーム3文字＋パスワード1文字を入力します。使用可能な文字は、以下の48種類です。ただし、ネーム部分が全て空白だと登録されません。<ul>
 <li>A～Z</li>
 <li>0～9</li>
 <li>?</li>
@@ -353,32 +354,58 @@
 <li>空白</li>
 </ul>
 </li>
-</ul>
-</li>
 <li>(既存データでプレイした場合のみ)まずマップ、続けて自機を選びます。</li>
 <li>プレイ終了後、ゲームオーバー画面の裏で情報がセーブされます<sup><a href="#fn_2" id="reffn_2">2</a></sup>。</li>
 </ol>
 <hr>
 <p>※ここから下は、ちょっとマニアックなお話です。慣れるまで気にしなくて構いません。</p>
-<h2 id="補足：データと難易度の関係"><a name="補足：データと難易度の関係" class="plugin-anchor" href="#補足：データと難易度の関係"><i class="fa fa-link" aria-hidden="true"></i></a>補足：データと難易度の関係</h2>
-<p>本作のゲームランクには、プレイ回数・スコア・解放した実績も影響します。その差は意外と大きなものがあるようです(体感的に)。</p>
+<h2 id="データと難易度の関係"><a name="データと難易度の関係" class="plugin-anchor" href="#データと難易度の関係"><i class="fa fa-link" aria-hidden="true"></i></a>データと難易度の関係</h2>
+<p>本作の難易度は、ゲームランクだけでなくユーザーデータも影響しているようです。<br>これは、同じマップ・機体・攻撃で「初回プレイ(上)」と「全マップ開放済み・3号機出現済み・infinity条件成立(下)」を比べたものですが・・・<br><img src="img/ユーザーデータ5.png" alt><img src="img/ユーザーデータ6.png" alt></p>
+<p>驚いた事に、ゲームランク自体は(1ミスしているにも関わらず)上の方が高くなっています。それでいて、攻撃は下の方が苛烈。<br>つまり「隠し要素の解放＝ランク上昇」ではなく<strong>「ランク＋解放で総合的に難易度が決まる」</strong>のだと考えられます。</p>
+<h2 id="ユーザーデータの上限は"><a name="ユーザーデータの上限は" class="plugin-anchor" href="#ユーザーデータの上限は"><i class="fa fa-link" aria-hidden="true"></i></a>ユーザーデータの上限は?</h2>
+<p>Wikipediaだと「64人」、ゲーメストは「256人」と、資料によってまちまちです。「超えた場合、古いデータから削除される」という、その基準も不明です。<br>
+そこで、手持ちの基板を使って確かめました。<strong>256回ユーザーデータを作って。</strong><br><br>
+結果は、赤枠のユーザーが消えています。最初に登録した(はずの)「VAN」が健在なので、削除基準は<strong>最終プレイ日時が古い順</strong>ですね。<br>なお、ランキングにユーザーの消去が反映されるのは<strong>次の電源投入時から</strong>です。それまでは、消えたユーザーの名前もここに出続けます。<img src="img/256_Before.png" alt><img src="img/256_After.png" alt></p>
+<p>詳しくは下記にまとめていますが、以前ここに記した「3機体合わせて256枠」などという中途半端な仕様ではなく、<strong>256人全員が3機体分セーブできます。</strong></p>
+<p>順を追って見てみましょう。ここに「1号機で257人目が登録した」リザルト画面があります<sup><a href="#fn_3" id="reffn_3">3</a></sup>。<br><img src="img/ユーザーデータ1.png" alt></p>
+<p>ここで257人目のデータを使い、<strong>2号機で</strong>プレイします<sup><a href="#fn_4" id="reffn_4">4</a></sup>。<br><img src="img/ユーザーデータ2.png" alt></p>
+<p>データがセーブされたのを確かめ、この時1人目であるユーザー「C(空白)×3」を入力すると、しっかり読み出されています<sup><a href="#fn_5" id="reffn_5">5</a></sup>。<br><img src="img/ユーザーデータ3.png" alt></p>
+<p>もちろん、257人目を1号機でプレイしてみても総数は「256」。機体毎に上限まで保存できる事が分かります。<br><img src="img/ユーザーデータ4.png" alt></p>
+<h2 id="※注意：この段落は「レスリー探検隊-調査報告書」の初稿からver8で修正されるまで、ずっと誤った記述を載せていました。掲載期間の長さを考慮し、以下に要約を記載します。大変申し訳ありません。"><a name="※注意：この段落は「レスリー探検隊-調査報告書」の初稿からver8で修正されるまで、ずっと誤った記述を載せていました。掲載期間の長さを考慮し、以下に要約を記載します。大変申し訳ありません。" class="plugin-anchor" href="#※注意：この段落は「レスリー探検隊-調査報告書」の初稿からver8で修正されるまで、ずっと誤った記述を載せていました。掲載期間の長さを考慮し、以下に要約を記載します。大変申し訳ありません。"><i class="fa fa-link" aria-hidden="true"></i></a>※注意：この段落は「レスリー探検隊 調査報告書」の初稿からVer.8で修正されるまで、ずっと誤った記述を載せていました。<br>掲載期間の長さを考慮し、以下に要約を記載します。大変申し訳ありません。</h2>
 <ul>
-<li>例えば、プレイ70回のデータと700回のデータでは露骨に変わります。</li>
-<li>スコアも、地味に無視できない影響を持ちます。普通にやると稼げない3号機は、この点ちょっと有利。</li>
-<li>実績は「ノーマルエンド達成」「3号機解放」「全マップ踏破」の3つですが、前者2つを取るとハッキリ難しくなります。リミッター解除ですね。</li>
+<li>ユーザーデータの上限<ul>
+<li>×：&quot;3機体で&quot;256枠(つまり85人＋あまり1枠)</li>
+<li>○：<strong>機体毎に</strong>256人(つまり256人×3機体＝768枠)</li>
 </ul>
-<h2 id="検証：ユーザーデータの上限は"><a name="検証：ユーザーデータの上限は" class="plugin-anchor" href="#検証：ユーザーデータの上限は"><i class="fa fa-link" aria-hidden="true"></i></a>検証：ユーザーデータの上限は?</h2>
-<p>Wikipediaだと「64人」、ゲーメストは「256人」と、資料によってまちまちです。「超えた場合、古いデータから削除される」という、その基準も不明です。<br>そこで、手持ちの基板を使って確かめました。<strong>256回ユーザーデータを作って。</strong><br>結果は、赤枠のユーザーが消えています。最初に登録した(はずの)「VAN」が健在なので、削除基準は<strong>最終プレイ日時が古い順</strong>ですね。<img src="img/256_Before.png" alt><img src="img/256_After.png" alt></p>
-<p>さて、この時ユーザー登録ごとにカウントアップした値を見ると、256でした。なら、ゲーメストの「256人」が正しいのか? <strong>否、</strong>実はもう少し複雑な仕様です。</p>
-<p>下の画像は、ユーザー数がいっぱいの状態で撮ったリザルト画面。使用した機体は、<strong>WR-01R</strong>です。<img src="img/WR-01R_Before.png" alt></p>
-<p>新規にユーザーを登録し、<strong>WR-02Rで</strong>プレイしてみます。ランキングの総数が1増えて、4になりました。<img src="img/WR-02R_Before.png" alt></p>
-<p>この状態で、既存ユーザーの<strong>WR-01Rで</strong>プレイしてみると・・・なんという事でしょう、総数が減っています。<img src="img/WR-01R_After.png" alt><br>これは、消されたユーザーが持っていたWR-01Rの枠も削除されたからです。つまり、<strong>全機体合わせて256枠</strong>というのがホントのところです。全員が3機体使うとすると、85人分＋あまり1枠ですね。</p>
-<p>この結果を基に推測した図がこちら。あくまで結果からの推測ですが、だいたい合ってる・・・はず。<img src="img/データ構造推測.png" alt><br>ちなみに、領域はユーザー登録時に確保され、その時点で3件消費するようです。</p>
+</li>
+<li>誤認識の理由<ul>
+<li>「リザルト画面のランキング」でユーザー数をカウントしたため</li>
+<li><a href="../5/AC版の小ネタ.html#2人同時プレイ">「ハイスコアが0点のユーザーはランキングの集計対象外」</a>(＝ランキングの総数に含まれない)点を見落としていた</li>
+</ul>
+</li>
+<li>上記の点を踏まえて再検証<ul>
+<li>手持ちの基板1枚を初期化し、まっさらな状態からカウント</li>
+<li>256回全てのプレイで「スコアを稼いで」潰したため、上記の問題を克服(＝ランキングの総数をカウンターとして使用可)</li>
+<li>念のため<a href="https://www.dropbox.com/s/uibtcqk56dth56m/%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%83%8D%E3%83%BC%E3%83%A0%E7%B7%8F%E5%BD%93%E3%81%9F%E3%82%8A%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3.xlsx" target="_blank">256人分のユーザー名リスト</a>を作成し、プレイ毎に印を付けてダブルチェック</li>
+<li>1号機で256人登録したのち、256人目を<strong>2号機で</strong>プレイ→一番古いユーザーデータは健在</li>
+<li>結論として、ユーザーデータの上限は「256人×3機体」と確定</li>
+</ul>
+</li>
+</ul>
 <blockquote id="fn_1">
 <sup>1</sup>. 公式サイトでは<a href="http://bit.ly/2Nxuutv" target="_blank">「GNet-Personaldata-Administer」としています。</a>無理矢理だな!<a href="#reffn_1" title="Jump back to footnote [1] in the text."> ↩</a>
 </blockquote>
 <blockquote id="fn_2">
 <sup>2</sup>. まず無いと思いますが、それまでにリセットしたりすると「解放した」事にはなりません<a href="#reffn_2" title="Jump back to footnote [2] in the text."> ↩</a>
+</blockquote>
+<blockquote id="fn_3">
+<sup>3</sup>. 総数が257なのは、削除処理がゲームオーバー画面で実行されるからです。つまり、この画面までは「既存の256人＋今回作成した1人」で257人分存在します<a href="#reffn_3" title="Jump back to footnote [3] in the text."> ↩</a>
+</blockquote>
+<blockquote id="fn_4">
+<sup>4</sup>. ちなみに下のメッセージ「おめでとうございます。あなたの記録が更新されました。」は「トップ10に入らなかったが、自分のハイスコアは更新した」時に見られるレアメッセージです<a href="#reffn_4" title="Jump back to footnote [4] in the text."> ↩</a>
+</blockquote>
+<blockquote id="fn_5">
+<sup>5</sup>. 初回登録時にこのメッセージは表示されません<a href="#reffn_5" title="Jump back to footnote [5] in the text."> ↩</a>
 </blockquote>
 
                             </div>
@@ -410,13 +437,13 @@
         <div class="container">
             <ul class="menu">
                 <li class="pull-right">
-                    <span class="service-info">Copyright GitBook 2022</span>
+                    <span class="service-info">Copyright GitBook 2023</span>
                 </li>
                 <li>
                     <a href="#">Return to the top</a>
                 </li>
                 <li>
-                    <a href="#">Updated Aug 13th 21</a>
+                    <a href="#">Updated Apr 29th 23</a>
                 </li>
             </ul>
         </div>
@@ -447,7 +474,7 @@
 
 <script>
 (function() {
-    gitbook.page.hasChanged({"page":{"date updated":"2021-08-12 01:53:44","title":"ユーザーデータ","level":"1.4.1","depth":2,"next":{"title":"マップセレクト","level":"1.4.2","depth":2,"path":"3/マップセレクト.md","ref":"3/マップセレクト.md","articles":[]},"previous":{"title":"基本要素","level":"1.4","depth":1,"path":"3/基本要素.md","ref":"3/基本要素.md","articles":[{"title":"ユーザーデータ","level":"1.4.1","depth":2,"path":"3/ユーザーデータ.md","ref":"3/ユーザーデータ.md","articles":[]},{"title":"マップセレクト","level":"1.4.2","depth":2,"path":"3/マップセレクト.md","ref":"3/マップセレクト.md","articles":[]},{"title":"自機性能","level":"1.4.3","depth":2,"path":"3/自機性能.md","ref":"3/自機性能.md","articles":[]},{"title":"侵食率","level":"1.4.4","depth":2,"path":"3/侵食率.md","ref":"3/侵食率.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro-fixed","anchors","expand-active-chapter","collapsible-chapters","theme-official","katex"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-chapters":{},"search-pro-fixed":{},"theme-official":{},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"expand-active-chapter":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"レスリー探検隊 改訂報告書","language":"ja","gitbook":"*","description":"RAYCRISISの攻略同人誌「レスリー探検隊 調査報告書」「レスリー探検隊 追加報告書」、その2冊を統合・改訂した総集編です。"},"file":{"path":"3/ユーザーデータ.md","mtime":"2021-08-13T05:45:10.267Z","type":"markdown"},"gitbook":{"version":"3.6.20","time":"2022-09-19T12:20:17.381Z"},"basePath":"..","book":{"language":""}});
+    gitbook.page.hasChanged({"page":{"date updated":"2023-03-10 02:14","title":"ユーザーデータ","level":"1.4.1","depth":2,"next":{"title":"マップセレクト","level":"1.4.2","depth":2,"path":"3/マップセレクト.md","ref":"3/マップセレクト.md","articles":[]},"previous":{"title":"基本要素","level":"1.4","depth":1,"path":"3/基本要素.md","ref":"3/基本要素.md","articles":[{"title":"ユーザーデータ","level":"1.4.1","depth":2,"path":"3/ユーザーデータ.md","ref":"3/ユーザーデータ.md","articles":[]},{"title":"マップセレクト","level":"1.4.2","depth":2,"path":"3/マップセレクト.md","ref":"3/マップセレクト.md","articles":[]},{"title":"自機性能","level":"1.4.3","depth":2,"path":"3/自機性能.md","ref":"3/自機性能.md","articles":[]},{"title":"侵食率","level":"1.4.4","depth":2,"path":"3/侵食率.md","ref":"3/侵食率.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro-fixed","anchors","expand-active-chapter","collapsible-chapters","theme-official","katex"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-chapters":{},"search-pro-fixed":{},"theme-official":{},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"expand-active-chapter":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"レスリー探検隊 改訂報告書","language":"ja","gitbook":"*","description":"RAYCRISISの攻略同人誌「レスリー探検隊 調査報告書」「レスリー探検隊 追加報告書」、その2冊を統合・改訂した総集編です。"},"file":{"path":"3/ユーザーデータ.md","mtime":"2023-04-29T14:32:51.392Z","type":"markdown"},"gitbook":{"version":"3.6.20","time":"2023-04-29T14:48:38.940Z"},"basePath":"..","book":{"language":""}});
 })();
 </script>
 

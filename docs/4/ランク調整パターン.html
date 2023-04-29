@@ -371,7 +371,7 @@
         
     
         
-        <a href="dis-Human.html" class="list-group-item ">
+        <a href="dis-human.html" class="list-group-item ">
         
 
             
@@ -380,7 +380,7 @@
 
             
 
-            dis-Human
+            dis-human
 
         
         </a>
@@ -452,6 +452,8 @@
             
 
             
+            <i class="octicon octicon-chevron-right"></i>
+            
 
             あとがきにかえて
 
@@ -478,14 +480,15 @@
                             <div class="gb-markdown book-page-inner">
                                 <h1 id="ランク調整パターン"><a name="ランク調整パターン" class="plugin-anchor" href="#ランク調整パターン"><i class="fa fa-link" aria-hidden="true"></i></a>ランク調整パターン</h1>
 <h2 id="どういうものか"><a name="どういうものか" class="plugin-anchor" href="#どういうものか"><i class="fa fa-link" aria-hidden="true"></i></a>どういうものか</h2>
-<p>本作にもゲームランクの概念が存在し、<a href="../参考資料.html#高橋書店ゲーム攻略本シリーズ「レイクライシス%20公式パーフェクトプログラム」">攻略本</a>によると0～255＋MAX<sup><a href="#fn_1" id="reffn_1">1</a></sup>の257段階となっています。<br>ランクを構成する(と考えられる)要素の、いくつかが以下です。見ると分かりますが、スコアとクリアランクは侵食率が密接に絡んでいます。</p>
+<p>本作にもゲームランクの概念が存在し、<a href="../参考資料.html#高橋書店ゲーム攻略本シリーズ「レイクライシス%20公式パーフェクトプログラム」">攻略本</a>によると0～255＋MAX<sup><a href="#fn_1" id="reffn_1">1</a></sup>の257段階となっています。
+ランクを構成する(と考えられる)要素の、いくつかが以下です。見ると分かりますが、スコアとクリアランクは侵食率が密接に絡んでいます。</p>
 <ul>
 <li><a href="../3/侵食率.html">侵食率</a></li>
 <li>スコア</li>
 <li><a href="https://twitter.com/R_GRAY1/status/1373606453219446786" target="_blank">ステージクリアランク</a></li>
-<li><a href="../3/ユーザーデータ.html#補足：データと難易度の関係">ユーザーデータ</a></li>
 </ul>
-<p>infinityに挑むなら、<a href="../3/侵食率.html#エンディング">出現条件</a>の関係である程度のランク上昇は避けられません。しかし、重要なのは<strong>3面クリア時の</strong>侵食率です。<br><mark>普段は高い侵食率でランク上昇を抑え、必要になったら下げよう</mark>――これが、ランク調整パターンのキモです。</p>
+<p>infinityに挑むなら、<a href="../3/侵食率.html#エンディング">出現条件</a>の関係である程度のランク上昇は避けられません。しかし、重要なのは<strong>3面クリア時の</strong>侵食率です。
+<mark>普段は高い侵食率でランク上昇を抑え、必要になったら下げよう</mark>――これが、ランク調整パターンのキモです。</p>
 <h2 id="具体的には"><a name="具体的には" class="plugin-anchor" href="#具体的には"><i class="fa fa-link" aria-hidden="true"></i></a>具体的には?</h2>
 <p>詳しくは各領域の解説をご覧いただきたいのですが、大雑把には以下のような流れです。</p>
 <ul>
@@ -495,7 +498,8 @@
 </ul>
 <p>目安としては、<strong>誤差＋2%以内</strong>に抑えたいところ。下げすぎると配置タイプが上がって作戦が狂いますので、せめて高めに。</p>
 <p>で、どうするのかというと<mark>逃がす敵・倒す敵を決めておく</mark>ことです。</p>
-<p><a href="../3/侵食率.html">侵食率</a>の説明から、大型機を1機倒せば一気に下がると見当が付きます。そういう敵は攻撃もやっかいな事が多いです。<br>であればそいつを倒し、他の小型機を逃がして帳尻を合わせよう・・・こんな感じで、パターンを作っていくと良いでしょう。</p>
+<p><a href="../3/侵食率.html">侵食率</a>の説明から、大型機を1機倒せば一気に下がると見当が付きます。そういう敵は攻撃もやっかいな事が多いです。
+であればそいつを倒し、他の小型機を逃がして帳尻を合わせよう・・・こんな感じで、パターンを作っていくと良いでしょう。</p>
 <p>もちろん、時には崩れる事もあります。そんな時は、アドリブで補正しましょう。</p>
 <ul>
 <li>大型機を逃がしたので、いつもより多めに小型機を倒す</li>
@@ -504,9 +508,26 @@
 <h2 id="どのくらい変わるの"><a name="どのくらい変わるの" class="plugin-anchor" href="#どのくらい変わるの"><i class="fa fa-link" aria-hidden="true"></i></a>どのくらい変わるの?</h2>
 <p>論より証拠、以下の画像をご覧下さい。1枚目が実施せず普通に攻めたケース、2枚目が実施したケースです。<img src="img/ランク調整パターン1.png" alt><img src="img/ランク調整パターン2.png" alt></p>
 <p>弾数が減少しているのが分かると思います。これによって圧迫感が減り、より広いスペースで落ち着いて避けられるようになる訳です。</p>
-<p>残念ながら、このパターンも万全ではありません。<a href="https://youtu.be/Jrxwzq0WYi0" target="_blank">ランク調整パターンで1ミスなのにえらくキツキツ</a>という事もあります。他にも要素があるのかもしれません。<br>しかし、概して難易度を抑えられるのは確かです。気合いで避けるしかない! という状況を減らしたい場合、ぜひ試してみて下さい。</p>
+<p>残念ながら、このパターンも万全ではありません。<a href="https://youtu.be/Jrxwzq0WYi0" target="_blank">ランク調整パターンで1ミスなのにえらくキツキツ</a>という事もあります。他にも要素があるのかもしれません。
+しかし、概して難易度を抑えられるのは確かです。気合いで避けるしかない! という状況を減らしたい場合、ぜひ試してみて下さい。</p>
+<h2 id="追記：rayz-arcade-chronologyによる検証"><a name="追記：rayz-arcade-chronologyによる検証" class="plugin-anchor" href="#追記：rayz-arcade-chronologyによる検証"><i class="fa fa-link" aria-hidden="true"></i></a>追記：Ray&apos;z Arcade Chronologyによる検証</h2>
+<p>今回の移植で、ゲームランクをリアルタイムに表示する機能が追加されました。これを利用して、通常パターンとランク調整パターンを比較するとこうなります。<img src="img/ランク調整パターン3.png" alt><img src="img/ランク調整パターン4.png" alt></p>
+<p>弾の密度がえらく異なりますね。侵食率0%は攻めすぎですが、普通にやってもランク180ぐらいは到達してしまいます。200を超える事もあります。<br>また、調査の過程で以下の点も判明しました。</p>
+<ul>
+<li>領域移動時、一定の値にセットされる。総合値(リザルト画面一番下のランク)で決まるのか、下画像のように<strong>値が下がる事もある。</strong><img src="img/ランク調整パターン5.png" alt><img src="img/ランク調整パターン6.png" alt></li>
+<li>まとめ撃ちで複数の敵を倒すと上がる。<strong>単発で倒した場合は上昇しない。</strong></li>
+<li>ハイパーレーザーおよびラウンドディバイダーで、ボーナス(画面左上に表示)を稼ぐと上がる。<strong>0点だった場合は上昇しない。</strong></li>
+<li>いわゆる「フレームランク」の類いは存在しない。</li>
+<li>一部の破壊可能弾<sup><a href="#fn_2" id="reffn_2">2</a></sup>を破壊すると上がる。</li>
+<li>被弾すると一時的に下がるが、自動で被弾前の値まで上がっていくので、実質的に変動しない。コンティニュー時も一切変化しない。</li>
+</ul>
+<p>強調した点がポイントで、<mark>単発で倒すorボーナスを稼がずハイパーレーザーを撃つ分には、ランクが関係しない</mark>事になります。侵食率を調整する際は、この点を意識するとより安全でしょう。</p>
+<p>なお、今まで構成要素に挙げていた「ユーザーデータ」ですが、<strong>ランクとは別個の要素らしい</strong>という結論に達しました。詳しくは<a href="../3/ユーザーデータ.html#データと難易度の関係">ユーザーデータのページ</a>をご覧下さい。</p>
 <blockquote id="fn_1">
 <sup>1</sup>. MAXは隠しコマンドを入れないと出ないので、普通のプレイで考慮する必要はありません<a href="#reffn_1" title="Jump back to footnote [1] in the text."> ↩</a>
+</blockquote>
+<blockquote id="fn_2">
+<sup>2</sup>. dis-humanのブロック弾、および炸裂弾など。ちなみに、Sem-slutのプラズマ弾では上昇しないようです<a href="#reffn_2" title="Jump back to footnote [2] in the text."> ↩</a>
 </blockquote>
 
                             </div>
@@ -538,13 +559,13 @@
         <div class="container">
             <ul class="menu">
                 <li class="pull-right">
-                    <span class="service-info">Copyright GitBook 2022</span>
+                    <span class="service-info">Copyright GitBook 2023</span>
                 </li>
                 <li>
                     <a href="#">Return to the top</a>
                 </li>
                 <li>
-                    <a href="#">Updated Aug 13th 21</a>
+                    <a href="#">Updated Apr 29th 23</a>
                 </li>
             </ul>
         </div>
@@ -575,7 +596,7 @@
 
 <script>
 (function() {
-    gitbook.page.hasChanged({"page":{"date updated":"2021-08-11 14:26:47","title":"ランク調整パターン","level":"1.5.1","depth":2,"next":{"title":"8ロックパターン","level":"1.5.2","depth":2,"path":"4/8ロックパターン.md","ref":"4/8ロックパターン.md","articles":[]},"previous":{"title":"各面攻略","level":"1.5","depth":1,"path":"4/各面攻略.md","ref":"4/各面攻略.md","articles":[{"title":"ランク調整パターン","level":"1.5.1","depth":2,"path":"4/ランク調整パターン.md","ref":"4/ランク調整パターン.md","articles":[]},{"title":"8ロックパターン","level":"1.5.2","depth":2,"path":"4/8ロックパターン.md","ref":"4/8ロックパターン.md","articles":[]},{"title":"マップ一覧","level":"1.5.3","depth":2,"path":"4/マップ一覧.md","ref":"4/マップ一覧.md","articles":[]},{"title":"自我領域","level":"1.5.4","depth":2,"path":"4/自我領域.md","ref":"4/自我領域.md","articles":[]},{"title":"知能領域","level":"1.5.5","depth":2,"path":"4/知能領域.md","ref":"4/知能領域.md","articles":[]},{"title":"記憶領域","level":"1.5.6","depth":2,"path":"4/記憶領域.md","ref":"4/記憶領域.md","articles":[]},{"title":"感情領域","level":"1.5.7","depth":2,"path":"4/感情領域.md","ref":"4/感情領域.md","articles":[]},{"title":"意識領域","level":"1.5.8","depth":2,"path":"4/意識領域.md","ref":"4/意識領域.md","articles":[]},{"title":"思考領域","level":"1.5.9","depth":2,"path":"4/思考領域.md","ref":"4/思考領域.md","articles":[]},{"title":"dis-Human","level":"1.5.10","depth":2,"path":"4/dis-Human.md","ref":"4/dis-Human.md","articles":[]},{"title":"infinity","level":"1.5.11","depth":2,"path":"4/infinity.md","ref":"4/infinity.md","articles":[]},{"title":"まとめ","level":"1.5.12","depth":2,"path":"4/まとめ.md","ref":"4/まとめ.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro-fixed","anchors","expand-active-chapter","collapsible-chapters","theme-official","katex"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-chapters":{},"search-pro-fixed":{},"theme-official":{},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"expand-active-chapter":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"レスリー探検隊 改訂報告書","language":"ja","gitbook":"*","description":"RAYCRISISの攻略同人誌「レスリー探検隊 調査報告書」「レスリー探検隊 追加報告書」、その2冊を統合・改訂した総集編です。"},"file":{"path":"4/ランク調整パターン.md","mtime":"2021-08-13T04:56:40.597Z","type":"markdown"},"gitbook":{"version":"3.6.20","time":"2022-09-19T12:20:17.381Z"},"basePath":"..","book":{"language":""}});
+    gitbook.page.hasChanged({"page":{"date updated":"2023-04-28 21:26","title":"ランク調整パターン","level":"1.5.1","depth":2,"next":{"title":"8ロックパターン","level":"1.5.2","depth":2,"path":"4/8ロックパターン.md","ref":"4/8ロックパターン.md","articles":[]},"previous":{"title":"各面攻略","level":"1.5","depth":1,"path":"4/各面攻略.md","ref":"4/各面攻略.md","articles":[{"title":"ランク調整パターン","level":"1.5.1","depth":2,"path":"4/ランク調整パターン.md","ref":"4/ランク調整パターン.md","articles":[]},{"title":"8ロックパターン","level":"1.5.2","depth":2,"path":"4/8ロックパターン.md","ref":"4/8ロックパターン.md","articles":[]},{"title":"マップ一覧","level":"1.5.3","depth":2,"path":"4/マップ一覧.md","ref":"4/マップ一覧.md","articles":[]},{"title":"自我領域","level":"1.5.4","depth":2,"path":"4/自我領域.md","ref":"4/自我領域.md","articles":[]},{"title":"知能領域","level":"1.5.5","depth":2,"path":"4/知能領域.md","ref":"4/知能領域.md","articles":[]},{"title":"記憶領域","level":"1.5.6","depth":2,"path":"4/記憶領域.md","ref":"4/記憶領域.md","articles":[]},{"title":"感情領域","level":"1.5.7","depth":2,"path":"4/感情領域.md","ref":"4/感情領域.md","articles":[]},{"title":"意識領域","level":"1.5.8","depth":2,"path":"4/意識領域.md","ref":"4/意識領域.md","articles":[]},{"title":"思考領域","level":"1.5.9","depth":2,"path":"4/思考領域.md","ref":"4/思考領域.md","articles":[]},{"title":"dis-human","level":"1.5.10","depth":2,"path":"4/dis-human.md","ref":"4/dis-human.md","articles":[]},{"title":"infinity","level":"1.5.11","depth":2,"path":"4/infinity.md","ref":"4/infinity.md","articles":[]},{"title":"まとめ","level":"1.5.12","depth":2,"path":"4/まとめ.md","ref":"4/まとめ.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro-fixed","anchors","expand-active-chapter","collapsible-chapters","theme-official","katex"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-chapters":{},"search-pro-fixed":{},"theme-official":{},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"expand-active-chapter":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"レスリー探検隊 改訂報告書","language":"ja","gitbook":"*","description":"RAYCRISISの攻略同人誌「レスリー探検隊 調査報告書」「レスリー探検隊 追加報告書」、その2冊を統合・改訂した総集編です。"},"file":{"path":"4/ランク調整パターン.md","mtime":"2023-04-29T14:34:54.057Z","type":"markdown"},"gitbook":{"version":"3.6.20","time":"2023-04-29T14:48:38.940Z"},"basePath":"..","book":{"language":""}});
 })();
 </script>
 

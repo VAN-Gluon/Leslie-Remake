@@ -290,6 +290,8 @@
             
 
             
+            <i class="octicon octicon-chevron-right"></i>
+            
 
             あとがきにかえて
 
@@ -325,12 +327,12 @@
 <h2 id="2人同時プレイ"><a name="2人同時プレイ" class="plugin-anchor" href="#2人同時プレイ"><i class="fa fa-link" aria-hidden="true"></i></a>2人同時プレイ</h2>
 <p>AC版のみ可能ですが、その時の仕様は以下の通りになっています。</p>
 <ul>
-<li>使用されるのは、開放率が高いユーザーデータ</li>
+<li>ネームエントリー画面で既に2人プレイの場合、使用されるのは開放率が高いユーザーデータ</li>
 <li>マップの決定権は、先にネームを入力した側<sup><a href="#fn_2" id="reffn_2">2</a></sup></li>
 <li>WR-03が使えるのは、開放済みorコマンド入力した側のみ</li>
 <li>スコアが0点の場合は集計対象外(データは記録される)</li>
 <li>1つのデータで2人プレイしても、プレイ回数の増加は1回</li>
-<li>リザルト画面の色は1P：赤、2P：青で表される<img src="img/1P2P.png" alt></li>
+<li>リザルト画面の色は「使用したデータのユーザー」で決まり、1P：赤、2P：青となる<img src="img/1P2P.png" alt></li>
 </ul>
 <h2 id="マザーボードとromカードの関係"><a name="マザーボードとromカードの関係" class="plugin-anchor" href="#マザーボードとromカードの関係"><i class="fa fa-link" aria-hidden="true"></i></a>マザーボードとROMカードの関係</h2>
 <ul>
@@ -345,9 +347,11 @@
 </li>
 <li><p>一番分かりやすいのは、右端の「INSERT (枚数) COIN〔S〕TO START」。ゲーム開始時のスクロール位置が一定なので、特定のポイントまでに何回+何文字進んだかで比較できます。これを基準にすると、アップデート後の方が早くなっています。</p>
 </li>
-<li><p>しかし動画を見ても、どちらが早いかはその都度異なります。証拠が無いため断言できませんが、私はアップデートに伴ってデータの読み込み方が変わったと推測しています。おそらく、リザルトやチェックポイントの前後で次のデータを読み出しており、それがこの差の原因ではないかと。</p>
+<li><p>しかし動画を見ても、どちらが早いかはまちまちです。断言できませんが、私はアップデートによりデータの読み込み方が変わったと推測しています。リザルト画面等で次のデータを読み出しており、その差が変化の原因ではないかと。</p>
 </li>
-<li><p>曲のスピードは変わってませんが、これは<a href="https://wiki.arcadeotaku.com/w/Taito_G-Net" target="_blank">サブCPU(Panasonic MN1020012A)を使用している</a>からだと思われます。しかし画面のスピードが変わるので、音でリズムを取るパターンの場合、展開に違和感が生じるでしょう。</p>
+<li><p><a href="https://www.dropbox.com/s/k29k7yj4cll0ij5/%E6%96%B0%E6%97%A7%E3%83%95%E3%83%AC%E3%83%BC%E3%83%A0%E6%AF%94%E8%BC%83.xlsx" target="_blank">マップごとの新旧フレーム差比較表</a>を作りました。これを見ると分かりますが、意外なほどバラバラです。それでもせいぜい30フレーム程度なので、普通にやってて支障を来す事は無いと思いますが・・・。</p>
+</li>
+<li><p>曲のスピードは変わっていませんが、これは<a href="https://wiki.arcadeotaku.com/w/Taito_G-Net" target="_blank">サブCPU(Panasonic MN1020012A)を使用している</a>からだと思われます。音でリズムを取るパターンの場合、展開に違和感が生じるでしょう。</p>
 </li>
 <li><p>なお、アップデートするとマザーボードが初期化されます。すなわち、<strong>全てのユーザーデータが消える</strong>のでご注意ください。アップデート済みかどうかは、CF+変換アダプター<sup><a href="#fn_5" id="reffn_5">5</a></sup>タイプのゲームで判断するしかないようです<sup><a href="#fn_6" id="reffn_6">6</a></sup>。</p>
 </li>
@@ -373,7 +377,7 @@
 <p>実はこれ、電源を入れてから最後にプレイしたスコアが表示されています(2人同時プレイなら、高かった方の値)。電源を入れ直すと、0点に戻ります。<img src="img/スコア.png" alt></p>
 <h2 id="1000回マラソンを自動化しよう"><a name="1000回マラソンを自動化しよう" class="plugin-anchor" href="#1000回マラソンを自動化しよう"><i class="fa fa-link" aria-hidden="true"></i></a>1000回マラソンを自動化しよう</h2>
 <ul>
-<li><p><a href="../3/ユーザーデータ.html#補足：データと難易度の関係">補足：データと難易度の関係</a>で述べた通り、プレイ回数も難易度に影響します。だからカンストで固定したいですが、上限は<strong>1000回。</strong>「やっていたら到達した」ならまだしも、狙ってやるのはタイヘン。そこで「多機能連射装置：R-03N」の特殊マクロを使って、ゲーム開始～ネームエントリーを自動化しちゃいましょう。</p>
+<li><p>プレイ回数の上限は<strong>1000回。</strong>「やっていたら到達した」ならまだしも、狙ってやるのはタイヘン。そこで「多機能連射装置：R-03N」の特殊マクロを使って、ゲーム開始～ネームエントリーを自動化しちゃいましょう。</p>
 </li>
 <li><p>手順は以下の通り。あらかじめ「フリープレイ・残1・コンティニュー禁止」に設定しておきます。</p>
 <ol>
@@ -553,7 +557,7 @@
 <sup>9</sup>. アトラクトデモ中はスタートとコイン以外のボタンを受け付けないので、このようにしています<a href="#reffn_9" title="Jump back to footnote [9] in the text."> ↩</a>
 </blockquote>
 <blockquote id="fn_10">
-<sup>10</sup>. 設定と動作確認は海外AC版で行いましたが、日本版でもたぶん同様にできます<a href="#reffn_10" title="Jump back to footnote [10] in the text."> ↩</a>
+<sup>10</sup>. 設定と動作確認は海外版で行いましたが、日本版でもたぶん同様にできます<a href="#reffn_10" title="Jump back to footnote [10] in the text."> ↩</a>
 </blockquote>
 <blockquote id="fn_11">
 <sup>11</sup>. どの文字を何フレームで選べるかは、実際に試すのが早いです。1文字動くのに3フレームぐらいという感じでした<a href="#reffn_11" title="Jump back to footnote [11] in the text."> ↩</a>
@@ -588,13 +592,13 @@
         <div class="container">
             <ul class="menu">
                 <li class="pull-right">
-                    <span class="service-info">Copyright GitBook 2022</span>
+                    <span class="service-info">Copyright GitBook 2023</span>
                 </li>
                 <li>
                     <a href="#">Return to the top</a>
                 </li>
                 <li>
-                    <a href="#">Updated Oct 10th 21</a>
+                    <a href="#">Updated Apr 29th 23</a>
                 </li>
             </ul>
         </div>
@@ -625,7 +629,7 @@
 
 <script>
 (function() {
-    gitbook.page.hasChanged({"page":{"date updated":"2021-10-10 00:23:46","title":"AC版の小ネタ","level":"1.6.1","depth":2,"next":{"title":"移植版について","level":"1.6.2","depth":2,"path":"5/移植版について.md","ref":"5/移植版について.md","articles":[]},"previous":{"title":"その他あれこれ","level":"1.6","depth":1,"path":"5/その他あれこれ.md","ref":"5/その他あれこれ.md","articles":[{"title":"AC版の小ネタ","level":"1.6.1","depth":2,"path":"5/AC版の小ネタ.md","ref":"5/AC版の小ネタ.md","articles":[]},{"title":"移植版について","level":"1.6.2","depth":2,"path":"5/移植版について.md","ref":"5/移植版について.md","articles":[]},{"title":"海外版について","level":"1.6.3","depth":2,"path":"5/海外版について.md","ref":"5/海外版について.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro-fixed","anchors","expand-active-chapter","collapsible-chapters","theme-official","katex"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-chapters":{},"search-pro-fixed":{},"theme-official":{},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"expand-active-chapter":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"レスリー探検隊 改訂報告書","language":"ja","gitbook":"*","description":"RAYCRISISの攻略同人誌「レスリー探検隊 調査報告書」「レスリー探検隊 追加報告書」、その2冊を統合・改訂した総集編です。"},"file":{"path":"5/AC版の小ネタ.md","mtime":"2021-10-09T18:20:57.301Z","type":"markdown"},"gitbook":{"version":"3.6.20","time":"2022-09-19T12:20:17.381Z"},"basePath":"..","book":{"language":""}});
+    gitbook.page.hasChanged({"page":{"date updated":"2021-10-10 00:23:46","title":"AC版の小ネタ","level":"1.6.1","depth":2,"next":{"title":"移植版について","level":"1.6.2","depth":2,"path":"5/移植版について.md","ref":"5/移植版について.md","articles":[]},"previous":{"title":"その他あれこれ","level":"1.6","depth":1,"path":"5/その他あれこれ.md","ref":"5/その他あれこれ.md","articles":[{"title":"AC版の小ネタ","level":"1.6.1","depth":2,"path":"5/AC版の小ネタ.md","ref":"5/AC版の小ネタ.md","articles":[]},{"title":"移植版について","level":"1.6.2","depth":2,"path":"5/移植版について.md","ref":"5/移植版について.md","articles":[]},{"title":"海外版について","level":"1.6.3","depth":2,"path":"5/海外版について.md","ref":"5/海外版について.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro-fixed","anchors","expand-active-chapter","collapsible-chapters","theme-official","katex"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-chapters":{},"search-pro-fixed":{},"theme-official":{},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"expand-active-chapter":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"レスリー探検隊 改訂報告書","language":"ja","gitbook":"*","description":"RAYCRISISの攻略同人誌「レスリー探検隊 調査報告書」「レスリー探検隊 追加報告書」、その2冊を統合・改訂した総集編です。"},"file":{"path":"5/AC版の小ネタ.md","mtime":"2023-04-29T14:02:44.897Z","type":"markdown"},"gitbook":{"version":"3.6.20","time":"2023-04-29T14:48:38.940Z"},"basePath":"..","book":{"language":""}});
 })();
 </script>
 
