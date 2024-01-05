@@ -6,7 +6,7 @@
         <title>AC版の小ネタ · レスリー探検隊 改訂報告書</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="HonKit 3.6.20">
+        <meta name="generator" content="HonKit 5.1.4">
         
         
         
@@ -36,7 +36,7 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
                 
             
                 
@@ -316,7 +316,7 @@
     
                             
                             <div class="gb-markdown book-page-inner">
-                                <h1 id="ac版の小ネタ"><a name="ac版の小ネタ" class="plugin-anchor" href="#ac版の小ネタ"><i class="fa fa-link" aria-hidden="true"></i></a>AC版の小ネタ</h1>
+                                <html><head></head><body><h1 id="ac版の小ネタ"><a name="ac版の小ネタ" class="plugin-anchor" href="#ac版の小ネタ"><i class="fa fa-link" aria-hidden="true"></i></a>AC版の小ネタ</h1>
 <h2 id="隠しコマンド"><a name="隠しコマンド" class="plugin-anchor" href="#隠しコマンド"><i class="fa fa-link" aria-hidden="true"></i></a>隠しコマンド</h2>
 <p>コイン投入後の画面で入力すると、以下の効果が得られます。いずれもそのプレイのみで、併用可能。一番下以外、スコアは保存されません<sup><a href="#fn_1" id="reffn_1">1</a></sup>。</p>
 <ul>
@@ -325,14 +325,18 @@
 <li>上上下下AAABBBBBB：ランクがMAX固定になる</li>
 </ul>
 <h2 id="2人同時プレイ"><a name="2人同時プレイ" class="plugin-anchor" href="#2人同時プレイ"><i class="fa fa-link" aria-hidden="true"></i></a>2人同時プレイ</h2>
-<p>AC版のみ可能ですが、その時の仕様は以下の通りになっています。</p>
 <ul>
-<li>ネームエントリー画面で既に2人プレイの場合、使用されるのは開放率が高いユーザーデータ</li>
-<li>マップの決定権は、先にネームを入力した側<sup><a href="#fn_2" id="reffn_2">2</a></sup></li>
+<li>どちらかが全マップ開放済みなら、任意にマップを選べる。それ以外の場合は、先にネームエントリーが完了した側の「PREVIOUS」を使用する</li>
+<li>マップの決定権は、先にネームエントリーが完了した側<sup><a href="#fn_2" id="reffn_2">2</a></sup></li>
 <li>WR-03が使えるのは、開放済みorコマンド入力した側のみ</li>
 <li>スコアが0点の場合は集計対象外(データは記録される)</li>
 <li>1つのデータで2人プレイしても、プレイ回数の増加は1回</li>
-<li>リザルト画面の色は「使用したデータのユーザー」で決まり、1P：赤、2P：青となる<img src="img/1P2P.png" alt></li>
+<li><a href="../3/マップセレクト.html#小ネタ：リザルト画面で点滅するヘックス">リザルト画面で点滅するヘックス</a>の色は、以下の法則になっている<ul>
+<li>1Pのみ開放済み：赤</li>
+<li>2Pのみ開放済み：青</li>
+<li>どちらも開放済み：緑<img src="img/1P2P.png" alt></li>
+</ul>
+</li>
 </ul>
 <h2 id="マザーボードとromカードの関係"><a name="マザーボードとromカードの関係" class="plugin-anchor" href="#マザーボードとromカードの関係"><i class="fa fa-link" aria-hidden="true"></i></a>マザーボードとROMカードの関係</h2>
 <ul>
@@ -533,7 +537,7 @@
 <sup>1</sup>. プレイ回数はちゃんと加算されます(新規にデータを作成して確認)<a href="#reffn_1" title="Jump back to footnote [1] in the text."> ↩</a>
 </blockquote>
 <blockquote id="fn_2">
-<sup>2</sup>. ただし、ネームを全て空白で入力した場合は除きます<a href="#reffn_2" title="Jump back to footnote [2] in the text."> ↩</a>
+<sup>2</sup>. ただし「初回プレイ」<a href="../3/ユーザーデータ.html#ユーザーデータ">「NGワードに抵触」</a>の場合は除きます<a href="#reffn_2" title="Jump back to footnote [2] in the text."> ↩</a>
 </blockquote>
 <blockquote id="fn_3">
 <sup>3</sup>. 2枚目のRAYCRISISを入手した際、手持ちのマザーボードに挿してみるとデータは読めました。「紐付け」はタイトル単位のようです<a href="#reffn_3" title="Jump back to footnote [3] in the text."> ↩</a>
@@ -562,7 +566,7 @@
 <blockquote id="fn_11">
 <sup>11</sup>. どの文字を何フレームで選べるかは、実際に試すのが早いです。1文字動くのに3フレームぐらいという感じでした<a href="#reffn_11" title="Jump back to footnote [11] in the text."> ↩</a>
 </blockquote>
-
+</body></html>
                             </div>
                             
                         
@@ -592,13 +596,13 @@
         <div class="container">
             <ul class="menu">
                 <li class="pull-right">
-                    <span class="service-info">Copyright GitBook 2023</span>
+                    <span class="service-info">Copyright GitBook 2024</span>
                 </li>
                 <li>
                     <a href="#">Return to the top</a>
                 </li>
                 <li>
-                    <a href="#">Updated Apr 29th 23</a>
+                    <a href="#">Updated Jan 6th 24</a>
                 </li>
             </ul>
         </div>
@@ -629,7 +633,7 @@
 
 <script>
 (function() {
-    gitbook.page.hasChanged({"page":{"date updated":"2021-10-10 00:23:46","title":"AC版の小ネタ","level":"1.6.1","depth":2,"next":{"title":"移植版について","level":"1.6.2","depth":2,"path":"5/移植版について.md","ref":"5/移植版について.md","articles":[]},"previous":{"title":"その他あれこれ","level":"1.6","depth":1,"path":"5/その他あれこれ.md","ref":"5/その他あれこれ.md","articles":[{"title":"AC版の小ネタ","level":"1.6.1","depth":2,"path":"5/AC版の小ネタ.md","ref":"5/AC版の小ネタ.md","articles":[]},{"title":"移植版について","level":"1.6.2","depth":2,"path":"5/移植版について.md","ref":"5/移植版について.md","articles":[]},{"title":"海外版について","level":"1.6.3","depth":2,"path":"5/海外版について.md","ref":"5/海外版について.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro-fixed","anchors","expand-active-chapter","collapsible-chapters","theme-official","katex"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-chapters":{},"search-pro-fixed":{},"theme-official":{},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"expand-active-chapter":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"レスリー探検隊 改訂報告書","language":"ja","gitbook":"*","description":"RAYCRISISの攻略同人誌「レスリー探検隊 調査報告書」「レスリー探検隊 追加報告書」、その2冊を統合・改訂した総集編です。"},"file":{"path":"5/AC版の小ネタ.md","mtime":"2023-04-29T14:02:44.897Z","type":"markdown"},"gitbook":{"version":"3.6.20","time":"2023-04-29T16:29:19.039Z"},"basePath":"..","book":{"language":""}});
+    gitbook.page.hasChanged({"page":{"date updated":"2021-10-10 00:23:46","title":"AC版の小ネタ","level":"1.6.1","depth":2,"next":{"title":"移植版について","level":"1.6.2","depth":2,"path":"5/移植版について.md","ref":"5/移植版について.md","articles":[]},"previous":{"title":"その他あれこれ","level":"1.6","depth":1,"path":"5/その他あれこれ.md","ref":"5/その他あれこれ.md","articles":[{"title":"AC版の小ネタ","level":"1.6.1","depth":2,"path":"5/AC版の小ネタ.md","ref":"5/AC版の小ネタ.md","articles":[]},{"title":"移植版について","level":"1.6.2","depth":2,"path":"5/移植版について.md","ref":"5/移植版について.md","articles":[]},{"title":"海外版について","level":"1.6.3","depth":2,"path":"5/海外版について.md","ref":"5/海外版について.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro-fixed","anchors","expand-active-chapter","collapsible-chapters","theme-official","katex"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-chapters":{},"search-pro-fixed":{},"theme-official":{},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"expand-active-chapter":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"レスリー探検隊 改訂報告書","language":"ja","gitbook":"*","description":"RAYCRISISの攻略同人誌「レスリー探検隊 調査報告書」「レスリー探検隊 追加報告書」、その2冊を統合・改訂した総集編です。"},"file":{"path":"5/AC版の小ネタ.md","mtime":"2024-01-05T16:49:56.746Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-01-05T16:52:36.442Z"},"basePath":"..","book":{"language":""}});
 })();
 </script>
 
