@@ -1,0 +1,2 @@
+・ローカル環境で動作確認：remakeフォルダーでコマンドプロンプトを開き「npx honkit serve」
+・コミット用に出力：上記と同様に「npx honkit build」→出力された「_books」を「docs」にリネームしてLeslie-Remakeフォルダー内へ上書き
